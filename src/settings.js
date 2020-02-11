@@ -23,7 +23,7 @@ import blueGray from '@material-ui/core/colors/blueGrey';
 /* eslint-enable no-unused-vars */
 
 const settings = {
-  title: 'React + Material-UI + Firebase',
+  title: 'KoinStreet',
 
   theme: {
     primaryColor: {
@@ -39,13 +39,13 @@ const settings = {
 
   credentials: {
     firebase: {
-      apiKey: 'AIzaSyDYZOrZVpXkPQD6J31mb9t2eIIxmGEJK-Q',
-      authDomain: 'react-material-ui-firebase.firebaseapp.com',
-      databaseURL: 'https://react-material-ui-firebase.firebaseio.com',
-      projectId: 'react-material-ui-firebase',
-      storageBucket: 'react-material-ui-firebase.appspot.com',
-      messagingSenderId: '552659850812',
-      appId: '1:552659850812:web:d685f74f72161d96'
+    apiKey: "AIzaSyAhNajgMyAhkoGR58LkDUk90WqV8Ni3Upw",
+    authDomain: "koinstreet-test.firebaseapp.com",
+    databaseURL: "https://koinstreet-test.firebaseio.com",
+    projectId: "koinstreet-test",
+    storageBucket: "koinstreet-test.appspot.com",
+    messagingSenderId: "1018834318903",
+    appId: "1:1018834318903:web:a95ff49fc1f54b5efa31b2"
     }
   }
 };

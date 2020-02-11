@@ -55,12 +55,12 @@ class HomeContent extends Component {
     return (
       <EmptyState
         icon={<CodeIcon className={classes.emptyStateIcon} color="action" />}
+        description="Welcome to"
         title={title}
-        description="The three musketeers, all in one pack in the form of a boilerplate app"
         button={
-          <Fab className={classes.button} color="secondary" href="https://github.com/Phoqe/react-material-ui-firebase" rel="noopener noreferrer" target="_blank" variant="extended">
+          <Fab className={classes.button} color="secondary" href="https://roshanmirajkar.github.io/" rel="noopener noreferrer" target="_blank" variant="extended">
             <GitHubCircleIcon className={classes.buttonIcon} />
-            GitHub
+            Live Demo
           </Fab>
         }
       />

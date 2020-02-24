@@ -41,11 +41,11 @@ class HomeContent extends Component {
       return (
         <EmptyState
           icon={<HomeIcon className={classes.emptyStateIcon} color="action" />}
-          title="Home"
-          description="Use React + Material-UI + Firebase as the starting-point for your project"
+          title="Welcome to KoinStreet"
+          description="Home Page"
           button={
             <Fab className={classes.button} color="secondary" component={Link} to="/some-magic" variant="extended">
-              Click For Some Magic
+              Learn about Crypto
             </Fab>
           }
         />

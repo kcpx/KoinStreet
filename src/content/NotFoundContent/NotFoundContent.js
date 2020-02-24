@@ -39,27 +39,27 @@ export default function MediaCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            What is Blockchain Technology?
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            Learn about the technology behind digital assets. This is what makes 
+            cryptocurreincies possible. 
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+         Learn More
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Share
         </Button>
       </CardActions>
     </Card>
 
     <EmptyState
         icon={<FindIcon className={classes.emptyStateIcon} color="action" />}
-        title="Content Not Found"
+        title="Learning Page"
         description="The requested URL was not found on this server"
         button={
           <Fab className={classes.button} color="secondary" component={Link} to="/" variant="extended">
@@ -77,20 +77,20 @@ export default function MediaCard() {
   />
   <CardContent>
     <Typography gutterBottom variant="h5" component="h2">
-      Lizard
+      Utility Tokens 
     </Typography>
     <Typography variant="body2" color="textSecondary" component="p">
-      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-      across all continents except Antarctica
+      Learn about tokens like Bitcoin and Ethereum whose tokens function 
+      as utilities within their networks. 
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions>
   <Button size="small" color="primary">
-    Share
+  Learn More
   </Button>
   <Button size="small" color="primary">
-    Learn More
+  Share
   </Button>
 </CardActions>
 </Card>

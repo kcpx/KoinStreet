@@ -12,6 +12,7 @@ import 'firebase/auth';
 import 'firebase/performance';
 
 import readingTime from 'reading-time';
+import { Link } from 'react-router-dom';
 
 // Material-UI
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
@@ -31,6 +32,7 @@ import Bar from '../layout/Bar/Bar';
 
 import HomeContent from '../content/HomeContent/HomeContent';
 import NotFoundContent from '../content/NotFoundContent/NotFoundContent';
+import BlockchainContent from '../content/BlockchainContent/BlockchainContent';
 
 import SignUpDialog from '../dialogs/SignUpDialog/SignUpDialog';
 import SignInDialog from '../dialogs/SignInDialog/SignInDialog';
@@ -1088,8 +1090,14 @@ class App extends Component {
 
                 <Switch>
                   <Route path="/" exact render={() => (<HomeContent isSignedIn={isSignedIn} title={settings.title} />)} />
-                  <Route component={NotFoundContent} />
+                  <Route path="/some-magic" component={NotFoundContent} />
+                  <Route path="/blockchainContent" component={BlockchainContent} />
                 </Switch>
+              
+              
+
+
+               
 
                 {isSignedIn &&
                   <React.Fragment>

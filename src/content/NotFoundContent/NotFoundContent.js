@@ -48,7 +48,7 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" component={Link} to="/blockchainContent">
          Learn More
         </Button>
         <Button size="small" color="primary">
@@ -63,7 +63,7 @@ export default function MediaCard() {
         description="The requested URL was not found on this server"
         button={
           <Fab className={classes.button} color="secondary" component={Link} to="/" variant="extended">
-            <HomeIcon className={classes.buttonIcon} /> Go Home
+            <HomeIcon className={classes.buttonIcon} /> HomePage
           </Fab>
         }
       />

@@ -48,7 +48,7 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" component={Link} to="/blockchainContent">
+        <Button size="small" color="primary" component={Link} to="/BlockchainContent">
          Learn More
         </Button>
         <Button size="small" color="primary">
@@ -58,9 +58,8 @@ export default function MediaCard() {
     </Card>
 
     <EmptyState
-        icon={<FindIcon className={classes.emptyStateIcon} color="action" />}
-        title="Learning Page"
-        description="The requested URL was not found on this server"
+        title="Learning Board"
+        description="Learn about the different types of Digital Assets"
         button={
           <Fab className={classes.button} color="secondary" component={Link} to="/" variant="extended">
             <HomeIcon className={classes.buttonIcon} /> HomePage
@@ -86,7 +85,7 @@ export default function MediaCard() {
   </CardContent>
 </CardActionArea>
 <CardActions>
-  <Button size="small" color="primary">
+  <Button size="small" color="primary" component={Link} to="/UtilityContent" variant="extended">
   Learn More
   </Button>
   <Button size="small" color="primary">

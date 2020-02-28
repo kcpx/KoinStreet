@@ -31,8 +31,9 @@ import LaunchScreen from '../layout/LaunchScreen/LaunchScreen';
 import Bar from '../layout/Bar/Bar';
 
 import HomeContent from '../content/HomeContent/HomeContent';
-import NotFoundContent from '../content/NotFoundContent/NotFoundContent';
+import LearningContent from '../content/LearningContent/LearningContent';
 import BlockchainContent from '../content/BlockchainContent/BlockchainContent';
+import UtilityContent from '../content/UtilityContent/UtilityContent';
 
 import SignUpDialog from '../dialogs/SignUpDialog/SignUpDialog';
 import SignInDialog from '../dialogs/SignInDialog/SignInDialog';
@@ -1090,8 +1091,9 @@ class App extends Component {
 
                 <Switch>
                   <Route path="/" exact render={() => (<HomeContent isSignedIn={isSignedIn} title={settings.title} />)} />
-                  <Route path="/some-magic" component={NotFoundContent} />
+                  <Route path="/some-magic" component={LearningContent} />
                   <Route path="/blockchainContent" component={BlockchainContent} />
+                  <Route path="/utilityContent" component={UtilityContent} />
                 </Switch>
               
               

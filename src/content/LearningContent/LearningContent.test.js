@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import { MemoryRouter } from 'react-router-dom';
 
-import NotFoundContent from './NotFoundContent';
+import LearningContent from './LearningContent';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -12,7 +12,10 @@ it('renders without crashing', () => {
   ReactDOM.render(
     (
       <MemoryRouter>
-        <NotFoundContent />
+        <LearningContent
+          isSignedIn={false}
+          title="q"
+        />
       </MemoryRouter>
     ),
     div

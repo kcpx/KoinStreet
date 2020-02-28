@@ -49,8 +49,43 @@ class BlockchainContent extends Component {
       };
 
     if (isSignedIn) {
+      
       return (
+
+
+        <div> 
+      
+        <YouTube
+          videoId="6WG7D47tGb0"
+          opts={opts}
+          onReady={this._onReady}
+        />
+  
+        
+  
+      
         <EmptyState
+           
+            button={
+              <Fab className={classes.button} color="secondary" component={Link} to="/some-magic" variant="extended">
+                Take Quiz -->
+              </Fab>
+            }
+          />
+  
+      
+  
+      </div> 
+
+        
+    
+      );
+    }
+
+    return (
+      <div> 
+      
+      <EmptyState
           icon={<HomeIcon className={classes.emptyStateIcon} color="action" />}
           title="Welcome to KoinStreet"
           description="Blockchain Page"
@@ -60,21 +95,6 @@ class BlockchainContent extends Component {
             </Fab>
           }
         />
-    
-      );
-    }
-
-    return (
-      <div> 
-      
-      <YouTube
-        videoId="6WG7D47tGb0"
-        opts={opts}
-        onReady={this._onReady}
-      />
-
-      
-
     
       <EmptyState
          

@@ -1091,9 +1091,10 @@ class App extends Component {
 
                 <Switch>
                   <Route path="/" exact render={() => (<HomeContent isSignedIn={isSignedIn} title={settings.title} />)} />
-                  <Route path="/some-magic" component={LearningContent} />
-                  <Route path="/blockchainContent" component={BlockchainContent} />
-                  <Route path="/utilityContent" component={UtilityContent} />
+                  <Route path="/blockchainContent" exact render={() => (<BlockchainContent isSignedIn={isSignedIn} title={settings.title} />)} />
+                  <Route path="/utilityContent" exact render={() => (<UtilityContent isSignedIn={isSignedIn} title={settings.title} />)} />
+                  <Route path="/some-magic" exact render={() => (<LearningContent isSignedIn={isSignedIn} title={settings.title} />)} />
+                
                 </Switch>
               
               

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import { MemoryRouter } from 'react-router-dom';
 
-import BlockchainContent from './BlockchainContent';
+import UtilityContent from './UtilityContent';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -12,7 +12,7 @@ it('renders without crashing', () => {
   ReactDOM.render(
     (
       <MemoryRouter>
-        <BlockchainContent />
+        <UtilityContent />
       </MemoryRouter>
     ),
     div

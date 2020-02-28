@@ -31,7 +31,7 @@ const styles = (theme) => ({
   }
 });
 
-class BlockchainContent extends Component {
+class UtilityContent extends Component {
   render() {
     // Styling
     const { classes } = this.props;
@@ -49,17 +49,35 @@ class BlockchainContent extends Component {
       };
 
     if (isSignedIn) {
+      
       return (
-        <EmptyState
-          icon={<HomeIcon className={classes.emptyStateIcon} color="action" />}
-          title="Welcome to KoinStreet"
-          description="Blockchain Page"
-          button={
-            <Fab className={classes.button} color="secondary" component={Link} to="/some-magic" variant="extended">
-              Learn about Crypto
-            </Fab>
-          }
+
+
+        <div> 
+      
+        <YouTube
+          videoId="6WG7D47tGb0"
+          opts={opts}
+          onReady={this._onReady}
         />
+  
+        
+  
+      
+        <EmptyState
+           
+            button={
+              <Fab className={classes.button} color="secondary" component={Link} to="/some-magic" variant="extended">
+                Take Quiz -->
+              </Fab>
+            }
+          />
+  
+      
+  
+      </div> 
+
+        
     
       );
     }
@@ -67,14 +85,16 @@ class BlockchainContent extends Component {
     return (
       <div> 
       
-      <YouTube
-        videoId="6WG7D47tGb0"
-        opts={opts}
-        onReady={this._onReady}
-      />
-
-      
-
+      <EmptyState
+          icon={<HomeIcon className={classes.emptyStateIcon} color="action" />}
+          title="Welcome to KoinStreet"
+          description="Utility Page"
+          button={
+            <Fab className={classes.button} color="secondary" component={Link} to="/some-magic" variant="extended">
+              Learn about Crypto
+            </Fab>
+          }
+        />
     
       <EmptyState
          
@@ -99,14 +119,14 @@ class BlockchainContent extends Component {
   
 }
 
-BlockchainContent.propTypes = {
+UtilityContent.propTypes = {
   classes: PropTypes.object.isRequired,
 
   isSignedIn: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired
 };
 
-export default withStyles(styles)(BlockchainContent);
+export default withStyles(styles)(UtilityContent);
  
 
 

@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { withStyles } from '@material-ui/core/styles';
-
 import Avatar from '@material-ui/core/Avatar';
 import Tooltip from '@material-ui/core/Tooltip';
 import Fab from '@material-ui/core/Fab';
 import Typography from '@material-ui/core/Typography';
-
 import EditIcon from '@material-ui/icons/Edit';
 
 const styles = (theme) => ({

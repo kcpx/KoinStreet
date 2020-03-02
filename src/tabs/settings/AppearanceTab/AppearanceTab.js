@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { withStyles } from '@material-ui/core/styles';
-
 import DialogContentText from '@material-ui/core/DialogContentText';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';

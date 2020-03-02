@@ -7,20 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
-import PropTypes from 'prop-types';
-
 import { Link } from 'react-router-dom';
-
-import { withStyles } from '@material-ui/core/styles';
-
 import Fab from '@material-ui/core/Fab';
-
-import CodeIcon from '@material-ui/icons/Code';
 import HomeIcon from '@material-ui/icons/Home';
-
-import GitHubCircleIcon from 'mdi-material-ui/GithubCircle';
-
 import EmptyState from '../../layout/EmptyState/EmptyState';
 
 const useStyles = makeStyles({
@@ -33,7 +22,7 @@ const useStyles = makeStyles({
 });
 
 //Check if they are signed in
-// UtilityContent.propTypes = {
+// LearningContent.propTypes = {
 //   classes: PropTypes.object.isRequired,
 
 //   isSignedIn: PropTypes.bool.isRequired,
@@ -64,27 +53,24 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
         <Button size="small" color="primary" component={Link} to="/BlockchainContent">
           Learn More
         </Button>
+        <Button size="small" color="primary" component={Link} to="">
+          Share
+        </Button>
       </CardActions>
     </Card>
-
     <EmptyState
           icon={<HomeIcon className={classes.emptyStateIcon} color="action" />}
-          title="Welcome to KoinStreet"
-          description="Home Page"
+          title="Learning Page"
+          description="Learn about different types of cryptocurrencies"
           button={
             <Fab className={classes.button} color="secondary" component={Link} to="/" variant="extended">
               Go back Home
             </Fab>
           }
         />
-
-
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -103,17 +89,14 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary" component={Link} to="/UtilityContent">
+        <Button size="small" color="primary" component={Link} to="/BlockchainContent">
           Learn More
+        </Button>
+        <Button size="small" color="primary" component={Link} to="">
+          Share
         </Button>
       </CardActions>
     </Card>
-
-
     </div>
-
   );
 }

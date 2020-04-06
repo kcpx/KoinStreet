@@ -26,6 +26,7 @@ import HomeContent from '../content/HomeContent/HomeContent';
 import LearningContent from '../content/LearningContent/LearningContent';
 import BlockchainContent from '../content/BlockchainContent/BlockchainContent';
 import UtilityContent from '../content/UtilityContent/UtilityContent';
+import QuizApp from '../components/QuizApp';
 
 import SignUpDialog from '../dialogs/SignUpDialog/SignUpDialog';
 import SignInDialog from '../dialogs/SignInDialog/SignInDialog';
@@ -34,6 +35,7 @@ import WelcomeDialog from '../dialogs/WelcomeDialog/WelcomeDialog';
 import SettingsDialog from '../dialogs/SettingsDialog/SettingsDialog';
 import InputDialog from '../dialogs/InputDialog/InputDialog';
 import ConfirmationDialog from '../dialogs/ConfirmationDialog/ConfirmationDialog';
+
 
 firebase.initializeApp(settings.credentials.firebase);
 
@@ -1086,6 +1088,8 @@ class App extends Component {
                   <Route path="/blockchainContent" exact render={() => (<BlockchainContent isSignedIn={isSignedIn} title={settings.title} />)} />
                   <Route path="/utilityContent" exact render={() => (<UtilityContent isSignedIn={isSignedIn} title={settings.title} />)} />
                   <Route path="/some-magic" exact render={() => (<LearningContent isSignedIn={isSignedIn} title={settings.title} />)} />
+                  <Route path="/magic" exact render={() => (<QuizApp isSignedIn={isSignedIn} title={settings.title} />)} />
+
                 </Switch>
               
               

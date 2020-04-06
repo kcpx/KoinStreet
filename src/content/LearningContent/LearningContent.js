@@ -92,7 +92,7 @@ export default function MediaCard() {
         <Button size="small" color="primary" component={Link} to="/BlockchainContent">
           Learn More
         </Button>
-        <Button size="small" color="primary" component={Link} to="">
+        <Button size="small" color="primary" component={Link} to="/magic">
           Share
         </Button>
       </CardActions>
